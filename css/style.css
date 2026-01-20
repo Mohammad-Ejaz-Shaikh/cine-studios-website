@@ -255,3 +255,102 @@ body {
   background: #d6b88d;
   color: #121212;
 }
+
+.about-hero {
+  height: 60vh;
+  background: url(/assets/images/photo-about.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.about-hero h1 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.about-section {
+  position: relative;
+  height: 120vh;
+  background: #121212;
+  overflow: hidden;
+}
+
+.about-marquee {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeMove 22s linear infinite;
+}
+
+.marquee-track span {
+  font-size: 8.5rem;
+  font-weight: 800;
+  letter-spacing: 14px;
+  color: rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+  padding-right: 140px;
+}
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.story-image {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  width: 40%;
+  z-index: 3;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-content {
+  position: absolute;
+  top: 38%;
+  left: 45%;
+  width: 35%;
+  z-index: 5;
+}
+
+.story-content h2 {
+  font-family: "Allura", cursive;
+  font-size: 3.6rem;
+  color: #e7cfa3;
+  margin-top: -130px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 20px rgba(214, 184, 141, 0.15);
+}
+
+.story-content p {
+  font-family: "playfair Display", serif;
+  color: #cfcfcf;
+  line-height: 1.9;
+  position: relative;
+  left: 200px;
+  max-width: 500px;
+  margin-top: 20px;
+  letter-spacing: 0.2px;
+  opacity: 0.95;
+}
