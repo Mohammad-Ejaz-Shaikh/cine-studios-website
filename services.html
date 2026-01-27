@@ -22,9 +22,15 @@
       <h1>Our Services</h1>
       <p>Cinematic storytelling crafted with emotions & elegance</p>
     </section>
+    <section class="service-filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="wedding" class="active">Wedding</button>
+      <button data-filter="prewedding" class="active">Pre-Wedding</button>
+      <button data-filter="product" class="active">Product</button>
+    </section>
     <section class="services-list">
       <div class="service-grid">
-        <div class="service-card">
+        <div class="service-card" data-category="wedding">
           <div class="service-img">
             <img
               src="/assets/images/Services/service-wedding.jpg"
@@ -38,7 +44,7 @@
           </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-category="prewedding">
           <div class="service-img">
             <img
               src="/assets/images/Services/service-prewedding.jpg"
@@ -52,7 +58,7 @@
           </p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-category="product">
           <div class="service-img">
             <img
               src="/assets/images/Services/service-product.jpg"
@@ -183,5 +189,6 @@
         © 2026 Cine Studios — Crafted with intention.
       </div>
     </footer>
+    <script src="js/services.js"></script>
   </body>
 </html>
